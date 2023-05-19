@@ -1,16 +1,10 @@
 import PropTypes from "prop-types";
+import styled from "./Button.module.css";
 
 function Button({ text }) {
 	return (
 		<div>
-			<button
-				style={{
-					backgroundColor: "tomato",
-					color: "white",
-				}}
-			>
-				{text}
-			</button>
+			<button className={styled.title}>{text}</button>
 		</div>
 	);
 }
