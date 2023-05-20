@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Root() {
 	return (
@@ -8,7 +9,10 @@ export default function Root() {
 				<nav>
 					<ul>
 						<li>
-							<Link to={"apps/First"}>First</Link>
+							<Link to={"apps/First"}>First useEffect practice</Link>
+						</li>
+						<li>
+							<Link to={"apps/Second"}>Second useEffect practice</Link>
 						</li>
 						<li>
 							<Link to={"apps/Todos"}>Todo List</Link>
