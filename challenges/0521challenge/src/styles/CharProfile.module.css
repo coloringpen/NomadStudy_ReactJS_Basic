@@ -1,0 +1,29 @@
+.charFrame {
+	width: 320px;
+	height: 770px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+	margin-left: 45px;
+	margin-bottom: 30px;
+}
+
+.basicBlockSize {
+	width: 300px;
+}
+
+.title {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.title:hover {
+	color: brown;
+}
+
+.comicText {
+	margin-bottom: 10px;
+}
