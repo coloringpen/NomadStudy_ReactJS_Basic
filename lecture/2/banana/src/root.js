@@ -1,5 +1,4 @@
 import { Link, Outlet } from "react-router-dom";
-import { useEffect } from "react";
 
 export default function Root() {
 	return (
@@ -21,7 +20,7 @@ export default function Root() {
 							<Link to={"apps/Coin"}>Coin Tracker</Link>
 						</li>
 						<li>
-							<Link to={"apps/Movies"}>Movies</Link>
+							<Link to={"apps/MoviesMain"}>Movies</Link>
 						</li>
 					</ul>
 				</nav>

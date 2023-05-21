@@ -5,6 +5,8 @@ import Second from "./routes/apps/Second.js";
 import Todos from "./routes/apps/Todos.js";
 import Coin from "./routes/apps/Coin.js";
 import Movies from "./routes/apps/movie/Movies.js";
+import MovieDetails from "./routes/apps/movie/MovieDetails.js";
+import MoviesMain from "./routes/apps/movie/MoviesMain.js";
 
 const router = createBrowserRouter([
 	{
@@ -24,14 +26,17 @@ const router = createBrowserRouter([
 				path: "apps/Todos",
 				element: <Todos />,
 			},
-			,
 			{
 				path: "apps/Coin",
 				element: <Coin />,
 			},
 			{
-				path: "apps/Movies",
-				element: <Movies />,
+				path: "apps/MoviesMain",
+				element: <MoviesMain />,
+				children: [
+					{ index: true, element: <Movies /> },
+					{ path: "apps/MoviesMain/:id", element: <MovieDetails /> },
+				],
 			},
 		],
 	},
