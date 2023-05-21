@@ -20,6 +20,9 @@ export default function Root() {
 						<li>
 							<Link to={"apps/Coin"}>Coin Tracker</Link>
 						</li>
+						<li>
+							<Link to={"apps/Movies"}>Movies</Link>
+						</li>
 					</ul>
 				</nav>
 			</div>
